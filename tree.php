@@ -52,8 +52,9 @@ $colors = $statement->fetchAll(PDO::FETCH_ASSOC);
 	<div class="page">
 		<h1><?php echo $tree['type'] ?></h1>
 		<p>
-			<?php echo $tree['name']; ?><br />
-			<?php echo $tree['alive']; ?><br />
+			Name: <?php echo $tree['name']; ?><br />
+			Is alive: <?php echo $tree['alive']; ?><br />
+			<?php echo $tree['name']; ?> is a tree.
 		</p>
 		
 		<ul>
@@ -61,11 +62,7 @@ $colors = $statement->fetchAll(PDO::FETCH_ASSOC);
 				<li><?php echo $color['name'] ?></li>
 			<?php endforeach; ?>
 		</ul>
-		<form method="post">
-			<input type="text" value="treeID" name="treeID">
-			<input type="text" value="quantity" name="quantity">
-			<input type="submit">
-			</form>
+		<p><a href="index.php">back </a></p> 
 			
 	</div>
 </body>

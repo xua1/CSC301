@@ -44,6 +44,7 @@ $trees = searchTrees($term, $database);
 				Name: <?php echo $tree['name']; ?> <br />
 				Is this tree alive: <?php echo $tree['alive']; ?> <br />
 				<a href="form.php?action=edit&treeID=<?php echo $tree['treeID'] ?>">Edit Tree</a><br />
+				<a href="form.php?action=add&treeID=<?php echo $tree['treeID'] ?>">Add Tree</a><br />
 				<a href="tree.php?treeID=<?php echo $tree['treeID'] ?>">View Tree</a>
 			</p>
 		<?php endforeach; ?>
